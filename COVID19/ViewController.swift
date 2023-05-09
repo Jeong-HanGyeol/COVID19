@@ -32,9 +32,10 @@ class ViewController: UIViewController {
     func fetchCovidOverview(
       completionHandler: @escaping (Result<CityCovidOverview, Error>) -> Void
     ) {
+        let apikey = Bundle.main.apiKey
         let url = "https://api.corona-19.kr/korea/country/new/"
         let param = [
-            "serviceKey": ""
+            "serviceKey": apikey
         ]
         
         AF.request(url, method: .get, parameters: param)

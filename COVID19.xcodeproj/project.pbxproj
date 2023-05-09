@@ -17,6 +17,7 @@
 		936008CC2A09434900E630B4 /* CovidDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936008CB2A09434900E630B4 /* CovidDetailViewController.swift */; };
 		936008CE2A09F4DB00E630B4 /* CityCovidOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936008CD2A09F4DA00E630B4 /* CityCovidOverview.swift */; };
 		936008D02A09FDE400E630B4 /* Apikey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 936008CF2A09FDE400E630B4 /* Apikey.plist */; };
+		936008D22A09FF0600E630B4 /* KEY++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936008D12A09FF0600E630B4 /* KEY++Bundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		936008CB2A09434900E630B4 /* CovidDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailViewController.swift; sourceTree = "<group>"; };
 		936008CD2A09F4DA00E630B4 /* CityCovidOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCovidOverview.swift; sourceTree = "<group>"; };
 		936008CF2A09FDE400E630B4 /* Apikey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Apikey.plist; sourceTree = "<group>"; };
+		936008D12A09FF0600E630B4 /* KEY++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KEY++Bundle.swift"; sourceTree = "<group>"; };
 		AAA624B1625599A1DFBDE462 /* Pods_COVID19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				936008CB2A09434900E630B4 /* CovidDetailViewController.swift */,
 				936008CD2A09F4DA00E630B4 /* CityCovidOverview.swift */,
 				936008CF2A09FDE400E630B4 /* Apikey.plist */,
+				936008D12A09FF0600E630B4 /* KEY++Bundle.swift */,
 			);
 			path = COVID19;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				936008BC2A092FE100E630B4 /* ViewController.swift in Sources */,
+				936008D22A09FF0600E630B4 /* KEY++Bundle.swift in Sources */,
 				936008CC2A09434900E630B4 /* CovidDetailViewController.swift in Sources */,
 				936008B82A092FE100E630B4 /* AppDelegate.swift in Sources */,
 				936008CE2A09F4DB00E630B4 /* CityCovidOverview.swift in Sources */,
