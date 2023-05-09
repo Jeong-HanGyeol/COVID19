@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V5N-M5-Zh9">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V5N-M5-Zh9">
                                 <rect key="frame" x="24" y="127.00000000000001" width="345" height="60.666666666666671"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yPX-vG-6bp">
@@ -71,10 +71,13 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0CH-zY-ufQ" customClass="PieChartView" customModule="Charts">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0CH-zY-ufQ" customClass="PieChartView" customModule="Charts">
                                 <rect key="frame" x="24" y="211.66666666666669" width="345" height="582.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="zuz-pW-gab">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,11 +88,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0CH-zY-ufQ" secondAttribute="bottom" constant="24" id="IYu-3e-oWT"/>
                             <constraint firstItem="0CH-zY-ufQ" firstAttribute="top" secondItem="V5N-M5-Zh9" secondAttribute="bottom" constant="24" id="MdE-jM-mdQ"/>
                             <constraint firstItem="0CH-zY-ufQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="QNQ-84-0QM"/>
+                            <constraint firstItem="zuz-pW-gab" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jQs-h8-S5C"/>
                             <constraint firstItem="V5N-M5-Zh9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="v1p-oZ-w7C"/>
+                            <constraint firstItem="zuz-pW-gab" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v4U-mj-KC5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Xn-il-Qft"/>
                     <connections>
+                        <outlet property="indicatorView" destination="zuz-pW-gab" id="qK0-Wq-WhQ"/>
+                        <outlet property="labelStackView" destination="V5N-M5-Zh9" id="KW1-dI-Ccu"/>
                         <outlet property="newCaseLabel" destination="JJp-bY-iad" id="y8k-GJ-KfW"/>
                         <outlet property="pieChartView" destination="0CH-zY-ufQ" id="SPL-vf-ZyE"/>
                         <outlet property="totalCaseLabel" destination="bCu-7q-Dm3" id="bLA-G6-X2k"/>
@@ -102,13 +109,13 @@
         <!--Covid Detail View Controller-->
         <scene sceneID="c2G-Wj-2s0">
             <objects>
-                <tableViewController id="eEG-OO-wYl" customClass="CovidDetailViewController" customModule="COVID19" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CovidDetailViewController" id="eEG-OO-wYl" customClass="CovidDetailViewController" customModule="COVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="FJB-IK-aEj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="5nh-dO-ho3">
+                            <tableViewSection headerTitle="" id="5nh-dO-ho3">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="c9d-et-ccy" detailTextLabel="oUs-4J-iEa" style="IBUITableViewCellStyleValue1" id="WCC-GV-EvM">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
