@@ -15,6 +15,8 @@
 		936008C12A092FE300E630B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936008C02A092FE300E630B4 /* Assets.xcassets */; };
 		936008C42A092FE300E630B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936008C22A092FE300E630B4 /* LaunchScreen.storyboard */; };
 		936008CC2A09434900E630B4 /* CovidDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936008CB2A09434900E630B4 /* CovidDetailViewController.swift */; };
+		936008CE2A09F4DB00E630B4 /* CityCovidOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936008CD2A09F4DA00E630B4 /* CityCovidOverview.swift */; };
+		936008D02A09FDE400E630B4 /* Apikey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 936008CF2A09FDE400E630B4 /* Apikey.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		936008C32A092FE300E630B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		936008C52A092FE300E630B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		936008CB2A09434900E630B4 /* CovidDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailViewController.swift; sourceTree = "<group>"; };
+		936008CD2A09F4DA00E630B4 /* CityCovidOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCovidOverview.swift; sourceTree = "<group>"; };
+		936008CF2A09FDE400E630B4 /* Apikey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Apikey.plist; sourceTree = "<group>"; };
 		AAA624B1625599A1DFBDE462 /* Pods_COVID19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,8 @@
 				936008C22A092FE300E630B4 /* LaunchScreen.storyboard */,
 				936008C52A092FE300E630B4 /* Info.plist */,
 				936008CB2A09434900E630B4 /* CovidDetailViewController.swift */,
+				936008CD2A09F4DA00E630B4 /* CityCovidOverview.swift */,
+				936008CF2A09FDE400E630B4 /* Apikey.plist */,
 			);
 			path = COVID19;
 			sourceTree = "<group>";
@@ -155,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				936008C42A092FE300E630B4 /* LaunchScreen.storyboard in Resources */,
+				936008D02A09FDE400E630B4 /* Apikey.plist in Resources */,
 				936008C12A092FE300E630B4 /* Assets.xcassets in Resources */,
 				936008BF2A092FE100E630B4 /* Main.storyboard in Resources */,
 			);
@@ -212,6 +219,7 @@
 				936008BC2A092FE100E630B4 /* ViewController.swift in Sources */,
 				936008CC2A09434900E630B4 /* CovidDetailViewController.swift in Sources */,
 				936008B82A092FE100E630B4 /* AppDelegate.swift in Sources */,
+				936008CE2A09F4DB00E630B4 /* CityCovidOverview.swift in Sources */,
 				936008BA2A092FE100E630B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
